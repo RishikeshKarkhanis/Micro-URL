@@ -17,7 +17,7 @@ async function HandleGoToUrl(req, res)
     const short_url = req.params.url;
     const urls = await models.Url.findOne({short_url:short_url});
     const long_url = urls.long_url;
-    res.redirect('https://' + long_url);
+    res.redirect(long_url);
 }
 
 async function HandleDeleteUrl(req, res)
