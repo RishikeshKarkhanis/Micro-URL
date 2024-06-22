@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="shortcut icon" href="/icons/favicon.ico" type="image/x-icon">
+    <title>MicroURL - Register</title>
+</head>
+
+<body>
+
+    <nav>
+        <button class="nav-title"><h1>Micro-URL 🔗</h1></button>
+        <form action="/login" method="get"><button class="nav-logout-btn">Login</button></form>
+    </nav>
+
+    <div class="root-container">
+
+        <div class="main-frame">
+
+            <div class="user-tag">
+                <h5 class="user-paragraph">Register</h5>
+            </div>
+
+            <form class="register-form" action="/add-user" method="post">
+                <input type="text" name="username" id="username" placeholder="Username">
+                <input type="email" name="email" id="email" placeholder="E-mail">
+                <input type="password" name="password" id="password" placeholder="Password">
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

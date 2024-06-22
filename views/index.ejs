@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="/icons/favicon.ico" type="image/x-icon">
+    <title>MicroURL - Home</title>
+</head>
+
+<body>
+
+    <nav>
+        <button class="nav-title"><h1>Micro-URL 🔗</h1></button>
+        <form action="/logout" method="get"><button class="nav-logout-btn">Logout</button></form>
+    </nav>
+
+    <div class="root-container">
+
+        <div class="main-frame">
+
+            <div class="user-tag">
+                <h5 class="user-paragraph">User : <%=usr.username%></h5>
+            </div>
+
+            <div class="copy-tag">
+                <h5 class="copy-paragraph">URL Copied!</h5>
+            </div>
+
+            <form class="add-panel" action="/add-url"  method="post">
+                <input type="text" name="l_url" id="l_url" placeholder="URL">
+                <button type="submit">+</button>
+            </form>
+
+            <br>
+
+            <div class="link-panel">
+                <% for (let i = 0; i < url.length; i++) { %>
+                    <div class="link">
+                        <p><%=url[i].short_url%></p>
+
+                        <div class="button-panel">
+                            <form action="/<%= url[i].short_url %>" method="get">
+                                <button class="go-btn" type="submit">Go</button>
+                            </form>
+    
+                            <form action="/copy-url/<%= url[i].short_url %>" method="get">
+                                <button class="copy-btn" type="submit" onclick="click_react()">Copy</button>
+                            </form>
+
+                            <form action="/delete-url/<%= url[i].short_url %>" method="get">
+                                <button class="delete-btn" type="submit">Delete</button>
+                            </form>
+                        </div>
+
+                    </div> 
+                <% } %> 
+            </div>
+
+        </div>
+    </div>
+
+</body>
+<script src="/scripts/index.js"></script>
+</html>

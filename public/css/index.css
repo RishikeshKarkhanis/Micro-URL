@@ -1,0 +1,196 @@
+body
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Navbar */
+nav
+{
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+nav .nav-title
+{
+    border: none;
+    background:none;
+}
+
+nav .nav-logout-btn
+{
+    border: none;
+    font-size: 21px;
+    cursor: pointer;
+    background-color: darkviolet;
+    border-radius: 6px;
+    color: white;
+}
+/* Navbar */
+
+/* Main Panel */
+
+.user-tag
+{
+    /* background-color: bisque; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 21px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.copy-tag
+{
+    display: flex;
+    justify-content: center;
+    height: 21px;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+    /* background-color: aquamarine; */
+    display: none;
+}
+
+.copy-tag h5
+{
+    background-color: darkviolet;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.root-container
+{
+    width: 100%;
+    height: 91vh;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-frame
+{
+    margin-top: -10vh;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #eeeeee;
+    border-radius: 6px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-panel
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    /* background-color: blue; */
+}
+
+.add-panel input
+{
+    width: 90%;
+    border: none;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    background-color: #dddddd;
+    color:black;
+    font-size: 21px;
+
+}
+
+.add-panel button
+{
+    width: 10%;
+    border: none;
+    cursor: pointer;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    font-size: 21px;
+    background-color: darkviolet;
+    color:white;
+}
+
+.link-panel
+{
+    width: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow:scroll; max-height:200px;
+}
+
+.link-panel .link
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: #cccccc;
+    width: 100%;
+    align-items: center;
+    border-radius: 6px;
+    margin-bottom: 5px;
+}
+
+.link-panel p
+{
+    margin-left: 5px;
+}
+
+.button-panel
+{
+    display: flex;
+    /* background-color: aqua; */
+    margin-right: 5px;
+    justify-content: space-between;
+}
+
+.button-panel .go-btn
+{
+    margin-right: 3px;
+    background-color: limegreen;
+    border: none;
+    border-radius: 3px;
+    font-size: 12px;
+    color:white;
+    cursor: pointer;
+}
+
+.button-panel .copy-btn
+{
+    margin-right: 3px;
+    background-color: dodgerblue;
+    border: none;
+    border-radius: 3px;
+    font-size: 12px;
+    color:white;
+    cursor: pointer;
+}
+
+.button-panel .delete-btn
+{
+    background-color: red;
+    border: none;
+    border-radius: 3px;
+    font-size: 12px;
+    color:white;
+    cursor: pointer;
+}
+/* Main Panel */

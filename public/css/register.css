@@ -1,0 +1,111 @@
+body
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Navbar */
+nav
+{
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+nav .nav-title
+{
+    border: none;
+    background:none;
+}
+
+nav .nav-logout-btn
+{
+    border: none;
+    font-size: 21px;
+    cursor: pointer;
+    background-color: darkviolet;
+    border-radius: 6px;
+    color: white;
+}
+/* Navbar */
+
+/* Main Panel */
+
+.user-tag
+{
+    /* background-color: bisque; */
+    width: 100%;
+    text-align: center;
+}
+
+.root-container
+{
+    width: 100%;
+    height: 91vh;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-frame
+{
+    margin-top: -10vh;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #eeeeee;
+    border-radius: 6px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register-form
+{
+    /* background-color: aqua; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.register-form input 
+{
+    border: none;
+    background-color: #dddddd;
+    font-size: 21px;
+    color: black;
+    text-align: center;
+    margin-bottom: 5px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.register-form button
+{
+    border: none;
+    background-color: darkviolet;
+    color:white;
+    font-size: 21px;
+    text-align: center;
+    margin-bottom: -15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.register-form p
+{
+    text-align: center;
+    /* background-color: aqua; */
+    color: red;
+    font-size: 21px;
+    margin-bottom: 5px;
+}
+
+/* Main Panel */

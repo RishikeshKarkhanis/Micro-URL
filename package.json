@@ -1,0 +1,23 @@
+{
+  "name": "url-shortner",
+  "version": "1.0.0",
+  "description": "IT IS AN URL SHORTNER",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Rishikesh Karkhanis",
+  "license": "ISC",
+  "dependencies": {
+    "clipboardy": "^4.0.0",
+    "cookie-parser": "^1.4.6",
+    "copy-paste": "^1.5.3",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.3",
+    "nodemon": "^3.1.4",
+    "uuid": "^10.0.0"
+  }
+}
