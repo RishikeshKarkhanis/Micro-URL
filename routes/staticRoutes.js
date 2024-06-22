@@ -12,7 +12,6 @@ router.post('/check-user', user.HandleCheckUser);
 router.get('/logout', user.HandleLogOut)
 router.post('/add-url', urls.HandleAddUrl);
 router.get('/:url', urls.HandleGoToUrl);
-router.get('/copy-url/:url', urls.HandleCopyUrl);
 router.get('/delete-url/:url', urls.HandleDeleteUrl);
 
 module.exports = router;

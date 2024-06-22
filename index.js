@@ -23,4 +23,4 @@ connect_to_database(process.env.DB_URL)
 app.use('/', staticRoute)
 
 // Port
-app.listen(process.env.PORT, () => {console.log("Server is running on 'http://192.168.1.7:" + process.env.PORT + "'");});
+app.listen(process.env.PORT, () => {console.log("Server is running on PORT : '" + process.env.PORT + "'");});

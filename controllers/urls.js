@@ -1,7 +1,6 @@
 const models = require('../models/models')
 const short_url_generator = require('../services/short_url_generator')
 const auth = require('../services/auth');
-const ncp = require("copy-paste");
 
 async function HandleAddUrl(req, res)
 {
@@ -21,16 +20,6 @@ async function HandleGoToUrl(req, res)
     res.redirect('https://' + long_url);
 }
 
-async function HandleCopyUrl(req, res)
-{
-    const short_url = req.params.url;
-    const full_short_url = 'http://localhost:3000/' + short_url + "?"
-    ncp.copy(full_short_url);
-    const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
-    await delay(5000);
-    res.redirect('/');
-}
-
 async function HandleDeleteUrl(req, res)
 {
     const short_url = req.params.url;
@@ -38,4 +27,4 @@ async function HandleDeleteUrl(req, res)
     res.redirect('/');
 }
 
-module.exports = {HandleAddUrl, HandleGoToUrl, HandleCopyUrl, HandleDeleteUrl};
+module.exports = {HandleAddUrl, HandleGoToUrl, HandleDeleteUrl};
